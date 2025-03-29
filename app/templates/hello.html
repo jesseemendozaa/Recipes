@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Recipe List</title>
+</head>
+<body>
+    <h1>Recipes are below:</h1>
+    <ul>
+        {% for recipe in recipe %}
+            <li>
+                <ul>
+                    <li>Title: {{recipe.title}}</li>
+                    <li>Description: {{recipe.description}}</li>
+                    <li>Ingredients: {{recipe.ingredients}}</li>
+                    <li>Instructions: {{recipe.instructions}}</li>
+                    <li>Date: {{recipe.date}}</li>
+                </ul>
+            </li>
+        {% else %}
+            <li>No recipes found</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
