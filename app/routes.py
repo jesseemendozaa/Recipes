@@ -10,31 +10,7 @@ from app import db
 from datetime import datetime # added datetime
 # from <X> import <Y>
 
-'''
-Setup instructions:
-
-Clone repo
-Navigate to folder
-
-run: 
-python3 -m venv venv
-source venv/bin/activate
-
-install necessary libraries using pip3
-
-run in terminal:
-flask shell
-from app import db
-db.create.all()
-exit()
-
-python3 run.py
-
-run in terminal to stop virtual environment:
-
-deactivate
-
-'''
+# Please check the README.md file for setup instructions
 
 @myapp_obj.route("/") # http://127.0.0.1:5000/
 def main():
