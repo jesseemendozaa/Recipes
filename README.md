@@ -16,7 +16,9 @@ pip install -r requirements.txt
 
 flask shell
 
-from app import db
+from app import db, myapp_obj
+
+from app.models import Recipe, User
 
 db.create_all()
 
